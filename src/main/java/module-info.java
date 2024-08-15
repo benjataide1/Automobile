@@ -3,6 +3,8 @@ module org.myapp.automobile {
     requires javafx.fxml;
 
 
+
+
     exports org.myapp.automobile.igu;
     opens org.myapp.automobile.igu to javafx.fxml;
     exports org.myapp.automobile.igu.controller;

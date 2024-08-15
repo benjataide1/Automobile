@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/22" fx:controller="org.myapp.automobile.igu.controller.MainController" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox alignment="CENTER" layoutX="127.0" layoutY="27.0" prefHeight="85.0" prefWidth="424.0">
+      <VBox alignment="CENTER" layoutX="205.0" layoutY="14.0" prefHeight="85.0" prefWidth="424.0">
          <children>
             <Label alignment="CENTER" contentDisplay="TOP" prefHeight="57.0" prefWidth="342.0" text="SALES OF CAR">
                <font>
@@ -19,7 +19,7 @@
             </Label>
          </children>
       </VBox>
-      <VBox alignment="CENTER" layoutX="361.0" layoutY="119.0" prefHeight="278.0" prefWidth="292.0">
+      <VBox alignment="CENTER" layoutX="410.0" layoutY="100.0" prefHeight="278.0" prefWidth="292.0">
          <children>
             <ImageView fitHeight="171.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,17 +28,17 @@
             </ImageView>
          </children>
       </VBox>
-      <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="186.0" text="REGISTRATION">
+      <Button layoutX="69.0" layoutY="132.0" mnemonicParsing="false" onAction="#btnRegistration" prefHeight="51.0" prefWidth="222.0" text="REGISTRATION">
          <font>
             <Font name="Segoe UI Emoji" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="69.0" layoutY="226.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="186.0" text="GET, UPDATE, DELETE">
+      <Button layoutX="69.0" layoutY="239.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="222.0" text="GET, UPDATE, DELETE">
          <font>
             <Font name="Segoe UI Emoji" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="69.0" layoutY="333.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="186.0" text="EXIT">
+      <Button layoutX="69.0" layoutY="346.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="222.0" text="EXIT">
          <font>
             <Font name="Segoe UI Emoji" size="15.0" />
          </font>
