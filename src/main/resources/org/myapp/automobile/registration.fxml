@@ -9,72 +9,71 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="451.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.myapp.automobile.igu.controller.RegisController">
-   <children>
-      <VBox alignment="CENTER" layoutX="114.0" layoutY="25.0" prefHeight="85.0" prefWidth="522.0">
-         <children>
-            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="57.0" prefWidth="428.0" text="CAR REGISTRATION">
-               <font>
-                  <Font name="Segoe UI" size="45.0" />
-               </font>
-            </Label>
-         </children>
-      </VBox>
-      <VBox alignment="CENTER" layoutX="371.0" layoutY="110.0" prefHeight="278.0" prefWidth="370.0">
-         <children>
-            <ImageView fitHeight="171.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../img/tesla.png" />
-               </image>
-            </ImageView>
-         </children>
-      </VBox>
-      <Label layoutX="85.0" layoutY="131.0" text="MODEL :">
-         <font>
-            <Font name="Segoe UI Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="83.0" layoutY="178.0" text="BRAND :">
-         <font>
-            <Font name="Segoe UI Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="83.0" layoutY="224.0" text="MOTOR :">
-         <font>
-            <Font name="Segoe UI Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="85.0" layoutY="277.0" text="COLOR :">
-         <font>
-            <Font name="Segoe UI Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="81.0" layoutY="324.0" text="PATENT :">
-         <font>
-            <Font name="Segoe UI Bold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="55.0" layoutY="379.0" text="COUNT_DOORS :">
-         <font>
-            <Font name="Segoe UI Bold" size="15.0" />
-         </font>
-      </Label>
-      <TextField layoutX="157.0" layoutY="128.0" />
-      <TextField layoutX="157.0" layoutY="175.0" />
-      <TextField layoutX="157.0" layoutY="221.0" />
-      <TextField layoutX="157.0" layoutY="274.0" />
-      <TextField layoutX="157.0" layoutY="321.0" />
-      <TextField layoutX="182.0" layoutY="376.0" prefHeight="25.0" prefWidth="47.0" />
-      <Button layoutX="248.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0" text="CLEAN">
-         <font>
-            <Font name="Segoe UI Bold" size="11.0" />
-         </font>
-      </Button>
-      <Button layoutX="385.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0" text="SAVE">
-         <font>
-            <Font name="Segoe UI Bold" size="11.0" />
-         </font>
-      </Button>
-   </children>
+<AnchorPane prefHeight="451.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.myapp.automobile.igu.controllers.RegisController">
+    <children>
+        <VBox alignment="CENTER" layoutX="114.0" layoutY="25.0" prefHeight="85.0" prefWidth="522.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="57.0" prefWidth="428.0" text="CAR REGISTRATION">
+                    <font>
+                        <Font name="Segoe UI" size="45.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="371.0" layoutY="110.0" prefHeight="278.0" prefWidth="370.0">
+            <children>
+                <ImageView fitHeight="171.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/tesla.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+        <Label layoutX="85.0" layoutY="131.0" text="MODEL :">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="178.0" text="BRAND :">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="224.0" text="MOTOR :">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="277.0" text="COLOR :">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="324.0" text="PATENT :">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="55.0" layoutY="379.0" text="COUNT_DOORS :">
+            <font>
+                <Font name="Segoe UI Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModel" layoutX="157.0" layoutY="128.0" />
+        <TextField fx:id="txtBrand" layoutX="157.0" layoutY="175.0" />
+        <TextField fx:id="txtMotor" layoutX="157.0" layoutY="221.0" />
+        <TextField fx:id="txtColor" layoutX="157.0" layoutY="274.0" />
+        <TextField fx:id="txtPatent" layoutX="157.0" layoutY="321.0" />
+        <TextField fx:id="txtDoors" layoutX="182.0" layoutY="376.0" prefHeight="25.0" prefWidth="47.0" />
+        <Button layoutX="248.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnClean" prefHeight="31.0" prefWidth="58.0" text="CLEAN">
+            <font>
+                <Font name="Segoe UI Bold" size="11.0" />
+            </font>
+        </Button>
+        <Button layoutX="385.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0" text="SAVE">
+            <font>
+                <Font name="Segoe UI Bold" size="11.0" />
+            </font>
+        </Button>
+    </children>
 </AnchorPane>

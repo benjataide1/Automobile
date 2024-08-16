@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/22" fx:controller="org.myapp.automobile.igu.controller.MainController" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.myapp.automobile.igu.controllers.MainController">
    <children>
       <VBox alignment="CENTER" layoutX="205.0" layoutY="14.0" prefHeight="85.0" prefWidth="424.0">
          <children>
@@ -28,7 +28,7 @@
             </ImageView>
          </children>
       </VBox>
-      <Button layoutX="69.0" layoutY="132.0" mnemonicParsing="false" onAction="#btnRegistration" prefHeight="51.0" prefWidth="222.0" text="REGISTRATION">
+      <Button fx:id="buttonRegis" layoutX="69.0" layoutY="132.0" mnemonicParsing="false" onAction="#btnRegistration" prefHeight="51.0" prefWidth="222.0" text="REGISTRATION">
          <font>
             <Font name="Segoe UI Emoji" size="15.0" />
          </font>

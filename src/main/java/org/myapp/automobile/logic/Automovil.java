@@ -1,8 +1,18 @@
 package org.myapp.automobile.logic;
 
+import org.hibernate.annotations.Type;
+
+import javax.persistence.*;
+import java.util.jar.Attributes;
+
+@Entity(name = "CAR")
 public class Automovil {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_Automovil;
+
+    @Basic
     private String model;
     private String brand;
     private String motor;
@@ -14,7 +24,7 @@ public class Automovil {
     public Automovil() {
     }
 
-    public Automovil( String model, String brand, String motor, String color, String patente, int countPuertas) {
+    public Automovil(String model, String brand, String motor, String color, String patente, int countPuertas) {
         this.model = model;
         this.brand = brand;
         this.motor = motor;
