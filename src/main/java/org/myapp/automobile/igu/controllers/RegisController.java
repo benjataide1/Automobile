@@ -1,4 +1,4 @@
-package org.myapp.automobile.igu.controller;
+package org.myapp.automobile.igu.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

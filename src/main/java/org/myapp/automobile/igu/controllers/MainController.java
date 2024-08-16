@@ -1,8 +1,7 @@
-package org.myapp.automobile.igu.controller;
+package org.myapp.automobile.igu.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
