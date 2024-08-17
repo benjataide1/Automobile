@@ -61,7 +61,7 @@ public class AutomobileController {
                 auto = em.getReference(Automovil.class, id);
                 auto.getId_Automovil();
             } catch (EntityNotFoundException enfe) {
-                throw new EntityNotFoundException("The student with id " + id + " no longer exists.");
+                throw new EntityNotFoundException("The Automobile with id " + id + " no longer exists.");
             }
             em.remove(auto);
             em.getTransaction().commit();
