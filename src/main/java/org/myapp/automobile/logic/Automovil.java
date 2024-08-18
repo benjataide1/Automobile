@@ -1,11 +1,13 @@
 package org.myapp.automobile.logic;
 
-import org.hibernate.annotations.Type;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
-import javax.persistence.*;
-import java.util.jar.Attributes;
+import javax.persistence.Id;
 
-@Entity(name = "CAR")
+@Entity
 public class Automovil {
 
     @Id
@@ -58,7 +60,7 @@ public class Automovil {
     }
 
     public int getId_Automovil() {
-        return id_Automovil;
+        return this.id_Automovil;
     }
 
     public void setId_Automovil(int id_Automovil) {

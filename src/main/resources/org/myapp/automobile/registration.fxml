@@ -70,7 +70,7 @@
                 <Font name="Segoe UI Bold" size="11.0" />
             </font>
         </Button>
-        <Button layoutX="385.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="58.0" text="SAVE">
+        <Button layoutX="385.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="31.0" prefWidth="58.0" text="SAVE">
             <font>
                 <Font name="Segoe UI Bold" size="11.0" />
             </font>
