@@ -1,4 +1,4 @@
-package org.myapp.automobile.controllers;
+package org.myapp.automobile.logic.controllers;
 
 import org.myapp.automobile.logic.Automovil;
 

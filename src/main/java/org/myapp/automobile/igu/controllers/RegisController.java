@@ -45,8 +45,6 @@ public class RegisController {
         int countDoors = Integer.parseInt(txtDoors.getText());
 
         controller.saveAutomobile(model, brand, motor, color, patent, countDoors);
-
-        System.out.println("Hello Benjii");
     }
 }
 

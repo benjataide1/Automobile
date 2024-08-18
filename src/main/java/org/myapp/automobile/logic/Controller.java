@@ -1,6 +1,6 @@
 package org.myapp.automobile.logic;
 
-import org.myapp.automobile.controllers.ControllerPersistence;
+import org.myapp.automobile.logic.controllers.ControllerPersistence;
 
 public class Controller {
     ControllerPersistence persistence = new ControllerPersistence();
