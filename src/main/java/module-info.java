@@ -4,6 +4,7 @@ module org.myapp.automobile {
     requires java.persistence;
     requires org.hibernate.orm.core;
     requires java.sql;
+    requires java.desktop;
 
 
     exports org.myapp.automobile.igu;

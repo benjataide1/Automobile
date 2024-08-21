@@ -32,4 +32,25 @@ public class MainController {
         stage.show();
 
     }
+
+    public void getUpDel(ActionEvent actionEvent) {
+
+        Stage stage = null;
+        Parent root = null;
+
+        try {
+
+            // Obtén la referencia al botón
+            stage = (Stage) buttonRegis.getScene().getWindow();
+
+            // Carga el nuevo FXML
+            root = FXMLLoader.load(getClass().getResource("/org/myapp/automobile/get_update_del.fxml"));
+        } catch (IOException e) {
+            e.getMessage();
+        }
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

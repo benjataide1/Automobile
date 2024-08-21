@@ -1,4 +1,20 @@
 package org.myapp.automobile.igu.controllers;
 
-public class GetUpDelController {
+import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
+
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class GetUpDelController implements Initializable {
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        cargaTabla();
+    }
+
+    public void cargaTabla(){
+
+    }
 }
