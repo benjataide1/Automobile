@@ -3,6 +3,8 @@ package org.myapp.automobile.logic.controllers;
 import org.myapp.automobile.logic.Automovil;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaQuery;
+import java.util.List;
 
 
 public class AutomobileController {
@@ -83,32 +85,32 @@ public class AutomobileController {
         }
     }
 
-//    public Automovil<Student> findStudentEntities() {
-//        return findStudentEntities(true, -1, -1);
-//    }
-//
-//    public List<Student> findStudentEntities(int maxResults, int firstResult) {
-//        return findStudentEntities(false, maxResults, firstResult);
-//    }
-//
-//    private List<Student> findStudentEntities(boolean all, int maxResults, int firstResult) {
-//        EntityManager em = getEntityManager();
-//        try {
-//            CriteriaQuery<Student> cq = em.getCriteriaBuilder().createQuery(Student.class);
-//            cq.select(cq.from(Student.class));
-//            Query q = em.createQuery(cq);
-//            if (!all) {
-//                q.setMaxResults(maxResults);
-//                q.setFirstResult(firstResult);
-//            }
-//            return q.getResultList();
-//        } finally {
-//            if (em != null) {
-//                em.close();
-//            }
-//        }
-//    }
-//
+    public List<Automovil> findAutomovilEntities() {
+        return findAutomovilEntities(true, -1, -1);
+    }
+
+    public List<Automovil> findStudentEntities(int maxResults, int firstResult) {
+        return findAutomovilEntities(false, maxResults, firstResult);
+    }
+
+    private List<Automovil> findAutomovilEntities(boolean all, int maxResults, int firstResult) {
+        EntityManager em = getEntityManager();
+        try {
+            CriteriaQuery<Automovil> cq = em.getCriteriaBuilder().createQuery(Automovil.class);
+            cq.select(cq.from(Automovil.class));
+            Query q = em.createQuery(cq);
+            if (!all) {
+                q.setMaxResults(maxResults);
+                q.setFirstResult(firstResult);
+            }
+            return q.getResultList();
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+    }
+
 //    public int getStudentCount() {
 //        EntityManager em = getEntityManager();
 //        try {

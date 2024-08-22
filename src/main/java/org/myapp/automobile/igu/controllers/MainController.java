@@ -13,6 +13,7 @@ public class MainController {
 
 
     public Button buttonRegis;
+    public Button buttonGDU;
 
     public void btnRegistration(ActionEvent actionEvent) throws IOException {
 
@@ -31,5 +32,21 @@ public class MainController {
         stage.setScene(scene);
         stage.show();
 
+    }
+
+    public void getUpDel(ActionEvent actionEvent) throws IOException {
+
+        Stage stage;
+        Parent root;
+
+        // Obtén la referencia al botón
+        stage = (Stage) buttonGDU.getScene().getWindow();
+
+        // Carga el nuevo FXML
+        root = FXMLLoader.load(getClass().getResource("/org/myapp/automobile/get_update_del.fxml"));
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

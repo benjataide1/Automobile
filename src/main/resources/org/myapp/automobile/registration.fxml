@@ -75,5 +75,10 @@
                 <Font name="Segoe UI Bold" size="11.0" />
             </font>
         </Button>
+      <Button fx:id="btBack" layoutX="26.0" layoutY="37.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="31.0" prefWidth="58.0" text="BACK">
+         <font>
+            <Font name="Segoe UI Bold" size="11.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

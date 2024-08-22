@@ -2,6 +2,8 @@ package org.myapp.automobile.logic;
 
 import org.myapp.automobile.logic.controllers.ControllerPersistence;
 
+import java.util.List;
+
 public class Controller {
     ControllerPersistence persistence = new ControllerPersistence();
 
@@ -9,5 +11,13 @@ public class Controller {
         Automovil automovil = new Automovil(model,brand,motor,color,patent,countDoors);
         persistence.saveAutomobile(automovil);
 
+    }
+
+    public List<Automovil> allAutomobiles() {
+       return persistence.allAutomobiles();
+    }
+
+    public void delete(int idAutomovil) {
+        persistence.delete(idAutomovil);
     }
 }
