@@ -38,5 +38,5 @@ This is a JavaFX-based application designed for managing a car dealership's inve
 * MySQL
 
 
-# This application was developed to practice and demonstrate skills in Java, JavaFX, and database integration, focusing on creating a functional and user-friendly management tool for a car dealership. It serves as a learning project in building CRUD applications with a graphical interface and persistent data storage.
+ This application was developed to practice and demonstrate skills in Java, JavaFX, and database integration, focusing on creating a functional and user-friendly management tool for a car dealership. It serves as a learning project in building CRUD applications with a graphical interface and persistent data storage.
 
