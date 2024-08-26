@@ -32,6 +32,7 @@ public class GetUpDelController implements Initializable {
     public TableColumn patent;
     public TableColumn doors;
     public Button btBack;
+    public Button btUpdate;
 
     Controller controller = new Controller();
 
@@ -72,7 +73,7 @@ public class GetUpDelController implements Initializable {
             cargaTabla();
 
         } else {
-           showMessage("Is Empty","Error","Error When Deleting");
+            showMessage("Is Empty", "Error", "Error When Deleting");
         }
     }
 
@@ -108,4 +109,50 @@ public class GetUpDelController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void btnUpdate(ActionEvent actionEvent) {
+        // Obtener la fila seleccionada
+        Automovil selectedAutomovil = (Automovil) tableView.getSelectionModel().getSelectedItem();
+
+        if (selectedAutomovil != null) {
+            Stage stage = null;
+            Parent root = null;
+
+            try {
+                // Obtén la referencia al botón
+                stage = (Stage) btUpdate.getScene().getWindow();
+
+                // Configurar el FXMLLoader
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/myapp/automobile/update.fxml"));
+
+                // Cargar el nuevo FXML
+                root = loader.load();
+
+                // Obtener el controlador asociado al FXML
+                UpdateController controller = loader.getController();
+
+                // Pasar el ID del automóvil al controlador
+                controller.findCar(selectedAutomovil.getId_Automovil());
+
+                // Opción alternativa: pasar el objeto Automovil completo
+                // controller.setAutomovil(selectedAutomovil);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+
+            // Configurar la escena y mostrarla
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } else {
+            showMessage("Is Empty", "Error", "Error When Updating");
+        }
+    }
+
+
+
 }

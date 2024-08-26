@@ -19,4 +19,12 @@ public class ControllerPersistence {
     public void delete(int idAutomovil) {
         automobileController.destroy(idAutomovil);
     }
+
+    public Automovil findAutomovil(int idAutomovil) {
+        return automobileController.findAutomovil(idAutomovil);
+    }
+
+    public void editAutomovil(Automovil automovil) throws Exception {
+        automobileController.edit(automovil);
+    }
 }
