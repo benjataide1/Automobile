@@ -30,7 +30,7 @@
                 </Lighting>
             </effect>
         </VBox>
-        <Button layoutX="631.0" layoutY="280.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="110.0" text="UPDATE">
+        <Button fx:id="btUpdate" layoutX="631.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="41.0" prefWidth="110.0" text="UPDATE">
             <font>
                 <Font name="Segoe UI Bold" size="11.0" />
             </font>

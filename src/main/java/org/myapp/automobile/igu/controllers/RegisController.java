@@ -46,16 +46,36 @@ public class RegisController {
     }
 
     public void btnSave(ActionEvent actionEvent) {
-        String model = txtModel.getText();
-        String brand = txtBrand.getText();
-        String motor = txtMotor.getText();
-        String color = txtColor.getText();
-        String patent = txtPatent.getText();
-        int countDoors = Integer.parseInt(txtDoors.getText());
 
-        controller.saveAutomobile(model, brand, motor, color, patent, countDoors);
+        Stage stage = null;
+        Parent root = null;
 
-        showMessage("Automobile Save","Info","successfully");
+        try {
+            String model = txtModel.getText();
+            String brand = txtBrand.getText();
+            String motor = txtMotor.getText();
+            String color = txtColor.getText();
+            String patent = txtPatent.getText();
+            int countDoors = Integer.parseInt(txtDoors.getText());
+
+            controller.saveAutomobile(model, brand, motor, color, patent, countDoors);
+
+            showMessage("Automobile Save", "Info", "successfully");
+
+            // Obtén la referencia al botón
+            stage = (Stage) btBack.getScene().getWindow();
+
+            // Carga el nuevo FXML
+            root = FXMLLoader.load(getClass().getResource("/org/myapp/automobile/main-view.fxml"));
+
+        } catch (IOException e) {
+            e.getMessage();
+        }
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
     }
 
     public void btnBack(ActionEvent actionEvent) {
